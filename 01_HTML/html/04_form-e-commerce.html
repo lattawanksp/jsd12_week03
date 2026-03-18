@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make a Scoop Order</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Make a Scoop</h1>
+    <hr />
+    <h2 style="text-align: center">Order Form</h2>
+    <hr />
+
+    <!--ตัวอย่าง <form action="https://www.google.com/search" method="get">
+-->
+
+    <form action="/study/confirmed-test-order.html" method="get">
+      <!-- 1. ข้อมูลลูกค้า กรอก filed -->
+      <div style="background-color: aquamarine">
+        <h2>Customer Info</h2>
+        Name:
+        <input
+          type="text"
+          name="name"
+          required
+          placeholder="ชื่อ-นามสกุล"
+        /><br /><br />
+        Phone:
+        <input
+          type="tel"
+          name="phone"
+          required
+          placeholder="เบอร์โทรศัพท์"
+        /><br /><br />
+        Email:
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="อีเมลล์"
+        /><br /><br />
+      </div>
+      <hr />
+      <h2>Order</h2>
+
+      <!-- 2. เลือกรส down drop -->
+      <h3>Ice Cream Flavor</h3>
+      <select name="flavor" id="flovors">
+        <option value="vanilla">Vanilla</option>
+        <option value="chocolate">Chocolate</option>
+        <option value="strawberry">Strawberry</option>
+      </select>
+      <br /><br />
+
+      <!-- 3. ขนาด เป็น radio กดเลือก 1 อย่าง -->
+      <h3>Size</h3>
+      <input type="radio" name="size" id="S" value="S" /> Small 4 oz.
+      <input type="radio" name="size" id="M" value="M" /> Medium 16 oz.
+      <input type="radio" name="size" id="L" value="L" /> Large 22 oz.
+      <br /><br />
+
+      <!-- 4. ใส่จำนวนสั่งซื้อ -->
+      <h3>Quantity</h3>
+      <input
+        type="number"
+        name="qty"
+        min="1"
+        required
+        placeholder="จำนวนที่ต้องการ"
+      /><br /><br />
+
+      <!-- 5. ท็อปปิ้ง -->
+      <h3>Toppings</h3>
+      <input type="checkbox" name="topping" id="oreo" value="oreo" /> Oreo
+      <input type="checkbox" name="topping" id="choco" value="choco" />
+      Chocolate Chips
+      <input type="checkbox" name="topping" id="nuts" value="nuts" /> Nuts
+      <input type="checkbox" name="topping" id="caramel" value="caramel" />
+      Caramel <br /><br />
+
+      <!-- 6. วิธีรับ -->
+      <h3>Delivery Method</h3>
+      <input type="radio" name="delivery" id="pickup" value="pickup" /> Pickup
+      <input type="radio" name="delivery" id="delivery" value="delivery" />
+      Delivery <br /><br />
+
+      <!-- 7. ที่อยู่ -->
+      <h3>Address</h3>
+      <textarea name="address" required placeholder="ที่อยู่"></textarea
+      ><br /><br />
+
+      <!-- 8. หมายเหตุ -->
+      <h3>Note</h3>
+      <textarea name="note" required placeholder="หมายเหตุ"></textarea
+      ><br /><br />
+
+      <!-- 9. ปุ่ม submit -->
+      <button type="submit">Submit Order</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

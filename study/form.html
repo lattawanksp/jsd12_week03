@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>form</h1>
+    <label for="coffee">กรอกกาแฟของคุณ</label>
+    <input id="coffee" type="text" placeholder="ชื่อแบรนด์" required />
+    <input type="checkbox" />
+    <div>
+      <label for="mesi">Mesi</label>
+      <input type="radio" name="player" id="mesi" value="mesi" />
+      <label for="ronal">Ronal</label>
+      <input type="radio" name="player" id="ronal" value="ronal" />
+    </div>
+
+    <div>
+      <h2>เลือกของที่จะใส่เพิ่มเติม</h2>
+      <!--ข้อมูล-->
+      <label for="kaidow"
+        >ไข่ดาว
+        <input type="checkbox" id="kaidow" name="extra" value="kaidows" />
+      </label>
+      <!--ข้อมูล-->
+      <label for="nampla"
+        >น้ำปลา
+        <input type="checkbox" id="nampla" name="extra" value="nampla" />
+      </label>
+    </div>
+    <!--value ยิงค่าไปที่ name / name คือ extra แบ่บคล้ายๆ กรุ๊ปเดียวกัน-->
+    <!--ในgoogle คือ extra=ส่งค่า แล้วเอาไปใช้งานต่อ-->
+
+    <!--for เหมือนกับ id เอาไว้ refer เฉยๆ / nameเป็น extra เหมือนกัน คือค่าที่เราจะส่งไปไว้ใน extra /valueคือเช็คบล็อคอยู่แล้ว-->
+    <button type="submit">submit</button>
+    <form action="https://www.google.com/search" method="get">
+      <input type="text" name="q" />
+      <!--เอาไปใช้ยิงในbackend-->
+
+      <!--ทำ drop down-->
+      <label for="size">เลือกไซส์</label>
+      <select name="" id="size">
+        <option value="big">จานใหญ่</option>
+        <option value="medium">จานกลาง</option>
+        <option value="small">จานเล็ก</option>
+      </select>
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
